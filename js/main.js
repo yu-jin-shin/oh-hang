@@ -36,13 +36,14 @@ $(function(){
         dots:false,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        asNavFor: '.slider-for'
       });
 
       $('.con a').click(function (event) {
         event.preventDefault();
   });
-      $('.ten .close').click(function(){
+ /*     $('.ten .close').click(function(){
         $('.ten').fadeOut();
       })
       $('.ten2 .close').click(function(){
@@ -55,4 +56,27 @@ $(function(){
         $('.ten2').fadeIn();
       })
   
- })
+*/
+$('.con a').each(function(){
+  //$('.pop').hide();
+  $(this).click(function(){
+    var ahref = $(this).attr('href');
+    $('.pop').hide();
+    $(ahref).fadeIn();
+    $('.con a').removeClass('on');
+    $(this).addClass('on')
+  })
+})
+$('.close').click(function(){
+  $('.pop').fadeOut(500);
+    })
+      $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.variable'
+      });
+      
+ }) //제이쿼리 전체끝
+

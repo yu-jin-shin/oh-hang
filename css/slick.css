@@ -122,6 +122,3 @@
 
 /***********************************************************************/
  
-#sec2 .slick-current {border: 0px solid #000000;box-sizing: border-box;transform: scale(1.25);}
-#sec2 .slick-slide img{width: 100%;transform: scale(1);margin-top: 22.5%;background-color: #FFF6F7;}
-#sec2 .slick-slide.slick-current img{margin-top: 7%;}
