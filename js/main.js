@@ -69,14 +69,15 @@ $('.con a').each(function(){
 })
 $('.close').click(function(){
   $('.pop').fadeOut(500);
-    })
-      $('.slider-for').slick({
+  $('.con a').removeClass('on');
+})
+$('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
         asNavFor: '.variable'
-      });
+   });
       
- }) //제이쿼리 전체끝
+}) //제이쿼리 전체끝
 
