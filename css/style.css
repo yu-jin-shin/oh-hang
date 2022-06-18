@@ -5,9 +5,9 @@ body{color: #000000;overflow-x: hidden;}
 
 
 #header .one img{width:30px;height:30px;}
-#header .inner{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;}
-#header p{padding-top: 50px;padding-right: 150px;}
-#header h1{padding:10px 0px 10px 600px}
+#header .inner{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: center;}
+#header .h7{padding-top: 37px;;}
+#header h1{padding:10px 0px 10px 120px;margin: 0 auto}
 
 
 
@@ -171,9 +171,9 @@ width: 20px;height: 20px;
         width: 215px;height: 60px;
     background-repeat: no-repeat;background-position: left center;background-size: auto 46px;
     padding-left: 75px;}
-#sec7 .to{background: url(../images/emoticon1_1.png)no-repeat;margin-left: 100px;margin-left: 150px;}
-#sec7 .to1{background: url(../images/emoticon2_2.png)no-repeat;}
-#sec7 .to2{background: url(../images/emoticon3_3.png)no-repeat;}
+#sec7 .to{background: url(../images/emoticon1_1.png)no-repeat;margin-left: 150px}
+#sec7 .to1{background: url(../images/emoticon2_2.png)no-repeat;padding-left: 55px;}
+#sec7 .to2{background: url(../images/emoticon3_3.png)no-repeat; padding-left: 70px;}
 
 
 #sec8 .pppp{border: 1.5px solid #ffc7ce;width: 700px;height: 70px; font-size: 1.2rem;background-color: #FFF0F2;margin-left: 360px;border-radius: 50px;text-align: center; outline: none;box-shadow: 5px 5px 8px #bebebe;margin-bottom: 150px; ;}
@@ -189,13 +189,13 @@ border: none;margin-left: 135px;margin-top: 13px;}
 #footer .div1{color: #fff;padding-top: 30px; padding-bottom: 35px;}
 #footer .div1 .pa{padding-left: 155px;}
 #footer .div1 .paa{color:#FF0000;font-size: 18px;}
-#footer .div1 .px{padding-left: 15px;}
+#footer .div1 .px{padding-left: 15px;padding-top: 20px;}
 #footer .div2 img{width: 35px;height: 35px; padding-right: 3px;padding-top: 50px;}
 #footer .div2 .h2 img{transform: translate(-82px,45px);}
 #footer .div2{padding-left: 120px;}
 #footer .logo{padding-right: 70px;padding-top: 40px;padding-left: 120px;}
 #footer .div1 a{padding-right:65px;text-align: center;padding-left: 38px;}
-#footer p{padding-top: 20px;text-align: center;}
+#footer p{text-align: center;}
 #footer span{color: #FF5858;}
 
 
@@ -219,10 +219,113 @@ border: none;margin-left: 135px;margin-top: 13px;}
 
 
 
+@media all and (max-width:1350px){
+    #footer .div2 {
+        padding-left: 0px;
+    }
+    #footer .inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #footer .logo {
+        padding-right: 0px;
+        padding-top: 40px;
+        padding-left: 0px;
+    }
+    #footer .div1 .pa {
+        padding-left: 100px;
+    }
+}
+
+
+@media all and (max-width:970px){
+    #footer .div2 img {
+    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-left: 0px;
+}
+#footer .div1 a {
+    padding-right: 0px; 
+    text-align: center;
+    padding-left: 38px;
+}
+#footer .div2 .h2 img {
+    transform: translate(0px,0px);
+}
+
+
+ 
+
+
+}
+
+@media all and (max-width:800px){
+    #footer .div2 img {
+        padding-bottom: 15px;
+        padding-top: 0px;
+        padding-left: 0px;}
+#footer .div1 {
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#sec7 a {
+    display: block;
+    padding-bottom: 15px;
+    width: 180px;
+}
+#sec2 .inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 120px;
+    margin-bottom: 200px;
+}
+}
+
 
 
 @media all and (max-width:760px){
     .slick-slide img {display: block;width: 100%;}
-  
-     
+    #footer .logo {
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    #sec7 .seven {
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;margin-left: 93px;
+    }
+    #sec7 .to {
+        background: url(../images/emoticon1_1.png)no-repeat;
+        margin-left: 0px;
+    }
 }
+  
+       
+     
+
+@media all and (max-width:500px){
+    #footer .div1 .pa {
+        padding-left: 50px;
+}
+#footer .div1 .px {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+#sec7 .to {
+    background: url(../images/emoticon1_1.png)no-repeat;
+    margin-left: 0px;
+}
+
+
+
+
+
+}
+
